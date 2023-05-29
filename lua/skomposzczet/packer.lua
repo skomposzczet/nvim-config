@@ -19,4 +19,5 @@ return require('packer').startup(function(use)
   }
 
   use ("theprimeagen/harpoon")
+  use ("mbbill/undotree")
 end)
