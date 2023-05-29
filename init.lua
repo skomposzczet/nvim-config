@@ -1,0 +1,2 @@
+require("skomposzczet")
+print("hello")
