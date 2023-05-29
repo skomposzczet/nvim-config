@@ -18,4 +18,5 @@ return require('packer').startup(function(use)
 	  requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
   }
 
+  use ("theprimeagen/harpoon")
 end)
