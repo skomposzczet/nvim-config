@@ -13,4 +13,9 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use {
+	  "nobbmaestro/nvim-andromeda",
+	  requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+  }
+
 end)
