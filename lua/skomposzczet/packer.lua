@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   use ("mbbill/undotree")
   use ('tpope/vim-fugitive')
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use 'nvim-treesitter/nvim-treesitter-context'
 
   use {
 	  'goolord/alpha-nvim',
