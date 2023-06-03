@@ -22,4 +22,16 @@ require'nvim-treesitter.configs'.setup {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
+
+  textobjects = {
+    lsp_interop = {
+      enable = true,
+      border = 'none',
+      floating_preview_opts = {},
+      peek_definition_code = {
+        ["<leader>dF"] = "@function.outer",
+        ["<leader>df"] = "@class.outer",
+      },
+    },
+  },
 }
