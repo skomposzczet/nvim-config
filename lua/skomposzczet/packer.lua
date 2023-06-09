@@ -79,4 +79,6 @@ use ("lukas-reineke/indent-blankline.nvim")
 
 use ('f-person/git-blame.nvim')
 
+use ('natecraddock/workspaces.nvim')
+
 end)
