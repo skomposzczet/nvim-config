@@ -81,4 +81,9 @@ use ('f-person/git-blame.nvim')
 
 use ('natecraddock/workspaces.nvim')
 
+use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+})
+
 end)
