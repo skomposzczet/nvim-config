@@ -86,4 +86,11 @@ use({
     run = function() vim.fn["mkdp#util#install"]() end,
 })
 
+use {
+  'tanvirtin/vgit.nvim',
+  requires = {
+    'nvim-lua/plenary.nvim'
+  }
+}
+
 end)
