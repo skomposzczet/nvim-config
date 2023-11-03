@@ -8,14 +8,14 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      -- or                            , branch = '0.1.x',
+      requires = { {'nvim-lua/plenary.nvim'} }
   }
 
   use {
-	  "nobbmaestro/nvim-andromeda",
-	  requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
+      "nobbmaestro/nvim-andromeda",
+      requires = { "tjdevries/colorbuddy.nvim", branch = "dev" }
   }
 
   use ("theprimeagen/harpoon")
@@ -29,11 +29,11 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter-context'
 
   use {
-	  'goolord/alpha-nvim',
-	  requires = { 'nvim-tree/nvim-web-devicons' },
-	  config = function ()
-		  require'alpha'.setup(require'alpha.themes.startify'.config)
-	  end
+      'goolord/alpha-nvim',
+      requires = { 'nvim-tree/nvim-web-devicons' },
+      config = function ()
+          require'alpha'.setup(require'alpha.themes.startify'.config)
+      end
   }
   use {
       'VonHeikemen/lsp-zero.nvim',
@@ -44,7 +44,7 @@ return require('packer').startup(function(use)
           {                                      -- Optional
           'williamboman/mason.nvim',
           run = function()
-              pcall(vim.cmd, 'MasonUpdate')
+              pcall(vimcmd, 'MasonUpdate')
           end,
       },
       {'williamboman/mason-lspconfig.nvim'}, -- Optional
@@ -92,5 +92,14 @@ use {
     'nvim-lua/plenary.nvim'
   }
 }
+use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
+})
 
 end)
