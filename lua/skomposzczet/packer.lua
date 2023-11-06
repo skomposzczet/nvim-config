@@ -109,4 +109,6 @@ use {
   }
 }
 
+use {'skomposzczet/symbols-outline.nvim', branch = 'center'}
+
 end)
