@@ -23,7 +23,7 @@ vim.keymap.set("v", "<leader>f", [["9y:%s/<C-r>9/<C-r>9/gI<Left><Left><Left>]])
 vim.keymap.set("v", "<leader>F", [["9y:%s/<C-r>9//gI<Left><Left><Left>]])
 
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+-- vim.keymap.set("n", "<leader><leader>", function()
+--     vim.cmd("so")
+-- end)
 
