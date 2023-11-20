@@ -122,4 +122,6 @@ use {
     }
   }
 
+use {'nvim-pack/nvim-spectre'}
+
 end)
