@@ -16,4 +16,4 @@ vim.opt.signcolumn = "yes"
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.list = true
-vim.opt.listchars = "tab:--"
+vim.opt.listchars = "tab:--,space:~"
